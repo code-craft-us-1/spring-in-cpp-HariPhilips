@@ -1,7 +1,7 @@
 #include "stats.h"
 #include <numeric>
 
-Stats Statistics::ComputeStatistics(const std::vector<float>& numList)
+Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& numList)
 {
     Statistics::Stats stats = { NAN, NAN, NAN };
 
