@@ -14,7 +14,7 @@ TEST(Statistics, ReportsAverageMinMax)
 TEST(Statistics, AverageNaNForEmpty)
 {
     auto computedStats = Statistics::ComputeStatistics({});
-    EXPECT_EQ(isnan(computedStats.average), 1);
-    EXPECT_EQ(isnan(computedStats.max), 1);
-    EXPECT_EQ(isnan(computedStats.min), 1);
+    EXPECT_EQ(std::isnan(computedStats.average), 1);
+    EXPECT_EQ(std::isnan(computedStats.max), 1);
+    EXPECT_EQ(std::isnan(computedStats.min), 1);
 }
